@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/activity_third"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.pamir.dragdropexample.ThirdActivity">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_arrow_up"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|center"
+            android:background="@android:color/white"
+            android:clipToPadding="true"
+            android:elevation="6dp"
+            android:outlineProvider="bounds">
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activated_icon"
+                    android:layout_height="@dimen/activated_icon"
+                    android:id="@+id/icon1"
+                    android:tint="#9E9E9E"
+                    android:src="@drawable/ic_home_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title1"
+                    android:textColor="#9E9E9E"
+                    android:text="Home" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activated_icon"
+                    android:layout_height="@dimen/activated_icon"
+                    android:id="@+id/icon2"
+                    android:tint="#9E9E9E"
+                    android:src="@drawable/ic_favorite_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title2"
+                    android:textColor="#9E9E9E"
+                    android:text="Likes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/activated_icon"
+                    android:layout_height="@dimen/activated_icon"
+                    android:id="@+id/icon3"
+                    android:tint="#9E9E9E"
+                    android:src="@drawable/ic_folder_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title3"
+                    android:textColor="#9E9E9E"
+                    android:text="Folders" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
